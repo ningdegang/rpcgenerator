@@ -6,6 +6,7 @@
 #include <google/protobuf/io/printer.h>
 #include <google/protobuf/io/zero_copy_stream.h>
 #include <google/protobuf/descriptor.pb.h>
+#include "rpc_generator.h"
 #include "log.h"
 
 using namespace google::protobuf::compiler::rpc;

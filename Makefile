@@ -16,7 +16,7 @@ RELOBJFILES = $(SOURCES:%.cc=objs/%.o)
 
 EXTLIBS= 
 
-BIN= spp_rpc_plugin
+BIN= rpc_generator
 
 all: ${BIN}
 
@@ -24,7 +24,7 @@ $(RELOBJFILES): objs/%.o: %.cpp $(HEADERS)
 	@mkdir -p objs
 	$(CC) -c $< -o $@ $(INC)
 
-spp_rpc_plugin: $(RELOBJFILES)
+rpc_generator: $(RELOBJFILES)
 	${CC} ${CFLAGS} ${INC} $(LIBDIRS)  -o $@ $^ $(SHAREDLIB) ${LIB} ${EXTLIBS}
 clean:
 	rm -f $(RELOBJFILES) ${BIN}

@@ -6,15 +6,10 @@ nclude <google/protobuf/compiler/cpp/cpp_file.h>
 #endif
 #include <set>
 
-#include <google/protobuf/compiler/cpp/cpp_enum.h>
-#include <google/protobuf/compiler/cpp/cpp_service.h>
-#include <google/protobuf/compiler/cpp/cpp_extension.h>
-#include <google/protobuf/compiler/cpp/cpp_helpers.h>
-#include <google/protobuf/compiler/cpp/cpp_message.h>
-#include <google/protobuf/compiler/cpp/cpp_field.h>
 #include <google/protobuf/io/printer.h>
 #include <google/protobuf/descriptor.pb.h>
-#include <google/protobuf/stubs/strutil.h>
+//#include <google/protobuf/stubs/strutil.h>
+#include "rpc_service.h"
 
 namespace google {
 namespace protobuf {

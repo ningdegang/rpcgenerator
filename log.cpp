@@ -19,7 +19,7 @@ static int log_fd= -1;
 
 char* get_logfile_name();
 
-char* level[] = {"DEBUG", "INFO", "WARN", "ERROR" };
+const char* level[] = {"DEBUG", "INFO", "WARN", "ERROR" };
 
 void log_write(int prio, const char *file, int line, const char *fmt, ...)
 {
